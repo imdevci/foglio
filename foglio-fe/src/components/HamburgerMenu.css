@@ -1,0 +1,199 @@
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-btn {
+  background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+  color: white;
+  border: none;
+  padding: 0 0.85rem;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hamburger-btn:hover {
+  transform: translateY(-2px);
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  min-width: 250px;
+  max-width: 350px;
+  margin-top: 8px;
+  z-index: 1000;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.menu-dropdown h3 {
+  color: #333;
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.labels-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.label-item {
+  padding: 0.75rem 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.label-item:last-child {
+  border-bottom: none;
+}
+
+.loading,
+.error,
+.empty {
+  padding: 1rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: #c33;
+}
+
+.create-label-form {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #6c757d;
+}
+
+.label-input,
+.edit-label-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #6c757d;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.label-input:focus,
+.edit-label-input:focus {
+  outline: none;
+}
+
+.create-label-btn,
+.save-btn,
+.cancel-btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.create-label-btn:hover:not(:disabled),
+.save-btn:hover {
+  transform: translateY(-1px);
+}
+
+.cancel-btn {
+  color: #666;
+}
+
+.create-label-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #333
+}
+
+.label-item {
+  padding: 0;
+  color: #333;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.label-item:last-child {
+  border-bottom: none;
+}
+
+.label-name {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.label-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  transition: transform 0.2s;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+.delete-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.edit-label-form {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+
+.label-divider {
+  height: 1px;
+  background-color: black;
+  margin: 4px 0;
+  opacity: 0.3;
+}
+
+.save-btn,
+.edit-btn,
+.delete-btn,
+.create-label-btn {
+  color: black !important
+}
